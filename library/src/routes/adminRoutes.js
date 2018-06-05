@@ -58,6 +58,7 @@ function router(nav) {
     .get((req, res) => {
       const url = 'mongodb://localost:27017';
       const dbName = 'libraryApp';
+      debug(nav);
 
       (async function mongo() {
         let client;
