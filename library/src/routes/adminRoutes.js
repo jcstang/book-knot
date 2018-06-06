@@ -56,7 +56,7 @@ const books = [
 function router(nav) {
   adminRouter.route('/')
     .get((req, res) => {
-      const url = 'mongodb://localost:27017';
+      const url = 'mongodb://localhost:27017';
       const dbName = 'libraryApp';
       debug(nav);
 
